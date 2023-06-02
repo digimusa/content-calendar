@@ -1,0 +1,36 @@
+### Find All Content
+GET http://localhost:8082/api/content
+
+### Get Content by ID
+GET http://localhost:8082/api/content
+
+### Create new Content
+POST http://localhost:8082/api/content
+Content-Type: application/json
+{
+    "id": 2,
+    "title": "My Second Blog Post",
+    "desc": "My Second Blog post",
+    "status": "IDEA",
+    "contentType": "ARTICLE",
+    "dateCreated": "2023-02-13T10:25:02.838496",
+    "dateUpdated": null,
+    "url": "",
+}
+
+### Update existing Content
+PUT http://localhost:8082/api/content/1
+Content-Type: application/json
+{
+    "id": 2,
+    "title": "My Second Blog Post!!!!!!!!!!!!!",
+    "desc": "My Second Blog post!",
+    "status": "IDEA",
+    "contentType": "ARTICLE",
+    "dateCreated": "2023-02-13T10:25:02.838496",
+    "dateUpdated": "2022-02-13T10:25:02.838496",
+    "url": "http://localhost:8082/my-first-blog-post",
+}
+
+### delete by id
+DELETE http://localhost:8082/api/content/1
